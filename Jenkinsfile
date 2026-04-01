@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "YOUR_DOCKERHUB_USERNAME/hello-k8s"
+        IMAGE_NAME = "apoorvar12/hello-k8s"
         IMAGE_TAG = "${BUILD_NUMBER}"
         
     }
@@ -11,7 +11,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                checkout scm
+                git branch: 'main', url: 'https://github.com/apoorvaramesh11/hello-k8s1.git'
+    
             }
         }
 
