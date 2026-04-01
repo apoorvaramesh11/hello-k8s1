@@ -26,7 +26,7 @@ pipeline {
             steps {
                 sh """
                     
-
+                    kind load docker-image ${IMAGE_NAME}:${IMAGE_TAG}
                     sed -i 's|${IMAGE_NAME}:latest|${IMAGE_NAME}:${IMAGE_TAG}|g' k8s/deployment.yaml
 
                     kubectl apply -f k8s/deployment.yaml
