@@ -73,7 +73,7 @@ pipeline {
         success {
             echo "✅ Deployment successful!"
             echo "🌐 Access your app using NodePort or port-forward:"
-            echo "kubectl port-forward svc/hello-k8s 5005:5005"
+            echo "kubectl port-forward svc/hello-k8s 5005:8082"
         }
 
         failure {
