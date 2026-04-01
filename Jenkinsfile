@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = "YOUR_DOCKERHUB_USERNAME/hello-k8s"
         IMAGE_TAG = "${BUILD_NUMBER}"
-        DOCKER_CREDENTIALS_ID = "dockerhub-creds"
+        
     }
 
     stages {
