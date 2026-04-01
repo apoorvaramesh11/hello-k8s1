@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: hello-k8s
-          image: apoorvar12/hello-k8s:latest
+          image: apoorvar12/hello-k8s:6
           ports:
             - containerPort: 5005
